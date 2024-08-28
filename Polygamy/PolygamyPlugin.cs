@@ -19,7 +19,7 @@ public class PolygamyPlugin : BaseUnityPlugin
 {
     private const string pluginGuid = "vurawnica.sunhaven.polygamy";
     private const string pluginName = "Polygamy";
-    private const string pluginVersion = "0.0.1";
+    private const string pluginVersion = "0.0.3";
     private Harmony m_harmony = new Harmony(pluginGuid);
     public static ManualLogSource logger;
 
@@ -90,6 +90,21 @@ public class PolygamyPlugin : BaseUnityPlugin
                 case "Iris":
                     text = "";
                     break;
+                case "Miyeon":
+                    text = "";
+                    break;
+                case "Kai":
+                    text = "";
+                    break;
+                case "Shang":
+                    text = "";
+                    break;
+                case "Wesley":
+                    text = "";
+                    break;
+                case "Vivi":
+                    text = "";
+                    break;
                 }
             }
             else if 
@@ -146,6 +161,21 @@ public class PolygamyPlugin : BaseUnityPlugin
                     text = "";
                     break;
                 case "Iris":
+                    text = "";
+                    break;
+                case "Miyeon":
+                    text = "";
+                    break;
+                case "Kai":
+                    text = "";
+                    break;
+                case "Shang":
+                    text = "";
+                    break;
+                case "Wesley":
+                    text = "";
+                    break;
+                case "Vivi":
                     text = "";
                     break;
                 }
@@ -207,7 +237,22 @@ public class PolygamyPlugin : BaseUnityPlugin
             case "Iris":
                 Player.Instance.QuestList.StartQuest("IrisMarriageQuest");
                 return "You're proposing?? Oh - I'm sorry, I was just so unprepared for this.[]...The answer is yes, obviously! I know you'll want it in Sun Haven, so I'll talk to your Archmage to set it up. Just be there tomorrow at 4:00 pm. Ah, this is so exciting!";
-            default:
+            case "Miyeon":
+                Player.Instance.QuestList.StartQuest("MiyeonMarriageQuest");
+                return "Oh! Heh, I really shouldn't be surprised. Actually, what's really surprising is... I don't think it's a bad idea. Sure, let's do it, XX![]We should do it at 4pm tomorrow at the event center! I'll take care of everything else, you just show up!";
+            case "Kai":
+                Player.Instance.QuestList.StartQuest("KaiMarriageQuest");
+                return "Oh! Heh, I really shouldn't be surprised. Actually, what's really surprising is... I don't think it's a bad idea. Sure, let's do it, XX![]We should do it at 4pm tomorrow at the event center! I'll take care of everything else, you just show up!";  
+            case "Shang":
+                Player.Instance.QuestList.StartQuest("ShangMarriageQuest");
+                return "Oh! Heh, I really shouldn't be surprised. Actually, what's really surprising is... I don't think it's a bad idea. Sure, let's do it, XX![]We should do it at 4pm tomorrow at the event center! I'll take care of everything else, you just show up!";    
+            case "Wesley":
+                Player.Instance.QuestList.StartQuest("WesleyMarriageQuest");
+                return "Oh! Heh, I really shouldn't be surprised. Actually, what's really surprising is... I don't think it's a bad idea. Sure, let's do it, XX![]We should do it at 4pm tomorrow at the event center! I'll take care of everything else, you just show up!";
+            case "Vivi":
+                Player.Instance.QuestList.StartQuest("ViviMarriageQuest");
+                return "Oh! Heh, I really shouldn't be surprised. Actually, what's really surprising is... I don't think it's a bad idea. Sure, let's do it, XX![]We should do it at 4pm tomorrow at the event center! I'll take care of everything else, you just show up!";
+                default:
                 return "Oh! Heh, I really shouldn't be surprised. Actually, what's really surprising is... I don't think it's a bad idea. Sure, let's do it, XX![]We should do it at 4pm tomorrow at the event center! I'll take care of everything else, you just show up!";
             }
         }

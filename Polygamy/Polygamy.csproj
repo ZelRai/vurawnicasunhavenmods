@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2</TargetFramework>
+    <TargetFramework>net4</TargetFramework>
     <AssemblyName>vurawnica.sunhaven.Polygamy</AssemblyName>
     <Description>Polygamy</Description>
-    <Version>0.0.1</Version>
+    <Version>0.0.3</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
     <RestoreAdditionalProjectSources>
